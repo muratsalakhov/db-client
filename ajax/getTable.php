@@ -64,7 +64,7 @@ while ($row = mysqli_fetch_array($table)) {
     </div>
 <?php else: ?>
     <div class="table-section">
-        <h2 style="text-align: center"><span style="color: #2e99f5">Слава</span><br><span style="color: yellow">Украине</span></h2>
+        <h2 style="text-align: center">Таблица пуста</h2>
     </div>
     <div class="form-section">
         <h2>Произвольный SQL запрос</h2>

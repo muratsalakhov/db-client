@@ -85,21 +85,6 @@ function buttonsInit() {
         sendSQL(sqlString);
     });
 
-
-    document.querySelector('.sql-submit').addEventListener('focus', (e) => {
-        let keysPressed = {};
-        document.addEventListener('keydown', (event) => {
-            keysPressed[event.key] = true;
-
-            if (keysPressed['Control'] && event.key == 'Enter') {
-                alert(event.key);
-            }
-        });
-
-        document.addEventListener('keyup', (event) => {
-            delete keysPressed[event.key];
-        });
-    });
 }
 
 buttonsInit();

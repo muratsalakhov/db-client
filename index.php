@@ -1,5 +1,7 @@
 <?php
 require_once 'config/dbconnect.php';
+require 'check_user.php';
+
 
 $DEFAULT_TABLE = 'test';
 

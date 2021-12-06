@@ -28,6 +28,15 @@ while ($row = mysqli_fetch_array($defaultTable)) {
 </head>
 <body>
 <div class="container">
+    <a href="logout.php" class="btn" style="
+    top: 40px;
+    text-align: right;
+    background-color: #ff7b7b;
+    padding: 5px 15px;
+    margin-top: 20px;
+    position: relative;
+    color: black;
+    text-decoration: none;">Выйти</a>
     <div class="select-section">
         <select class="select">
             <?php while ($row = mysqli_fetch_array($tables)): ?>

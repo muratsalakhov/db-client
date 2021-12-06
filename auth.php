@@ -10,7 +10,6 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
     $query = "SELECT * FROM user WHERE username='$username' and password='$password'";
     $result = mysqli_query($connect, $query) or die(mysqli_error($connect));
     $count = mysqli_num_rows($result);
-echo $count;
     if($count == 1){
         session_start();
         $_COOKIE['username'] = $username;

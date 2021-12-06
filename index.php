@@ -3,7 +3,7 @@ require_once 'config/dbconnect.php';
 require 'check_user.php';
 
 
-$DEFAULT_TABLE = 'test';
+$DEFAULT_TABLE = 'component';
 
 $queryTables = "SHOW TABLES;";
 $tables = mysqli_query($connect, $queryTables);
